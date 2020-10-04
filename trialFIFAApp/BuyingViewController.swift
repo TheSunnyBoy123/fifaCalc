@@ -1,11 +1,8 @@
+
+
 import UIKit
 
-enum assets {
-    static let bg = "Background"
-}
-
-class ViewController: UIViewController {
-    
+class BuyingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +21,5 @@ class ViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-    @IBAction func tapBuyButton(){
-        let buy_vc = storyboard?.instantiateViewController(identifier: "buying_vc") as! BuyingViewController
-        present(buy_vc, animated: true)
-    }
-    @IBAction func tapSellButton(){
-        let sell_vc = storyboard?.instantiateViewController(identifier: "selling_vc") as! SellingViewController
-        present(sell_vc, animated: true)
-    }
-    
+
 }
-
-
